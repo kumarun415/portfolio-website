@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07152d"/><stop offset=".55" stop-color="#061b3f"/><stop offset="1" stop-color="#050817"/></linearGradient>
+<linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06d9ff"/><stop offset=".5" stop-color="#1687ff"/><stop offset="1" stop-color="#8b2cff"/></linearGradient>
+<linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#dffbff"/><stop offset="1" stop-color="#00d9ff"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<circle cx="64" cy="64" r="60" fill="url(#bg)"/>
+<circle cx="64" cy="64" r="58" fill="none" stroke="url(#ring)" stroke-width="3" filter="url(#glow)"/>
+<path d="M35 91 58 28q6-12 12 0l24 63H79L64 49 50 91Z" fill="url(#a)"/>
+<path d="M49 67h30l-5 11H45Z" fill="#07152d"/>
+<path d="m88 49 12 12-12 12M83 48l-7 26" fill="none" stroke="#06d9ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 78q38-36 79-26" fill="none" stroke="#06d9ff" stroke-width="2" opacity=".7"/>
+</svg>
