@@ -2302,35 +2302,36 @@
 
 /* ================= IMAGE ================= */
 
-.certificate-image-wrapper {
-  position: relative;
-
+.certificate-image {
   width: 100%;
+  aspect-ratio: 16 / 10;
 
-  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   overflow: hidden;
-
   background: #0b1118;
+
+  padding: 14px;
 }
 
-.certificate-image {
+.certificate-image img {
   width: 100%;
   height: 100%;
 
   object-fit: contain;
 
-  padding: 18px;
+  border-radius: 10px;
 
   transition:
     transform 0.5s ease,
     filter 0.5s ease;
 }
 
-.certificate-card:hover .certificate-image {
-  transform: scale(1.04);
-
-  filter: brightness(0.65);
+.certificate-card:hover .certificate-image img {
+  transform: scale(1.03);
+  filter: brightness(0.75);
 }
 
 
@@ -2670,9 +2671,10 @@
     padding: 90px 10px;
   }
 
-  .certificate-image-wrapper {
-    height: 220px;
-  }
+  .certificate-image {
+    aspect-ratio: 16 / 10;
+    padding: 10px;
+}
 
   .certificate-content {
     padding: 20px;
@@ -4022,4 +4024,138 @@ body.light-theme .resume-action-btn:hover {
   background: rgba(0, 158, 131, 0.12);
 
   color: #009e83;
+}
+
+
+/* =====================================================
+   LIGHT THEME - TEXT VISIBILITY FIX
+   ===================================================== */
+
+body.light-theme {
+  color: #111827;
+}
+
+/* All section headings */
+body.light-theme .section-heading h2,
+body.light-theme .section-heading h3 {
+  color: #111827;
+}
+
+body.light-theme .section-heading p {
+  color: #64748b;
+}
+
+/* Skills */
+body.light-theme .skill-category {
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+body.light-theme .skill-category h3,
+body.light-theme .skill-category h4 {
+  color: #111827;
+}
+
+body.light-theme .skill-category p {
+  color: #64748b;
+}
+
+body.light-theme .skill-name,
+body.light-theme .skill-item,
+body.light-theme .skill-title {
+  color: #334155;
+}
+
+/* Education */
+body.light-theme .education-card,
+body.light-theme .education-item {
+  color: #111827;
+}
+
+body.light-theme .education-card h2,
+body.light-theme .education-card h3,
+body.light-theme .education-card h4,
+body.light-theme .education-item h2,
+body.light-theme .education-item h3,
+body.light-theme .education-item h4 {
+  color: #111827;
+}
+
+body.light-theme .education-card p,
+body.light-theme .education-item p {
+  color: #64748b;
+}
+
+/* Certificates */
+body.light-theme .certificate-card h2,
+body.light-theme .certificate-card h3,
+body.light-theme .certificate-card h4 {
+  color: #111827;
+}
+
+body.light-theme .certificate-card p {
+  color: #64748b;
+}
+
+/* Projects */
+body.light-theme .project-content h3,
+body.light-theme .project-content h4 {
+  color: #111827;
+}
+
+body.light-theme .project-content p {
+  color: #64748b;
+}
+
+/* Contact */
+body.light-theme .contact-section .section-heading h2 {
+  color: #111827;
+}
+
+body.light-theme .contact-section .section-heading h2 strong {
+  background: linear-gradient(
+    90deg,
+    #00b894,
+    #3498db,
+    #7c5cff
+  );
+
+  /* Standard property */
+  background-clip: text;
+
+  /* WebKit compatibility */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .contact-card h3,
+body.light-theme .contact-form h2,
+body.light-theme .contact-form h3 {
+  color: #111827;
+}
+
+body.light-theme .contact-form label {
+  color: #334155;
+}
+
+/* General spans / labels that were too faint */
+body.light-theme span,
+body.light-theme label {
+  opacity: 1;
+}
+
+
+/* =====================================================
+   LIGHT THEME - SKILL TEXT VISIBILITY
+   ===================================================== */
+
+body.light-theme .skill-info > span {
+  color: #334155;
+}
+
+body.light-theme .skill-info small {
+  opacity: 1;
+}
+
+body.light-theme .skill-dots span {
+  background: rgba(15, 23, 42, 0.12);
 }

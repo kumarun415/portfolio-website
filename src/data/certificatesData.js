@@ -9,7 +9,7 @@
         description:
         "8-week online training covering Java fundamentals, OOP, advanced Java, database handling, GUI programming and Java with AI.",
         verify:
-        "https://trainings.internshala.com/verify_certificate",
+            "https://trainings.internshala.com/verify_certificate?certificate_number=7ri0zlvfvnb",
     },
 
     {
@@ -21,7 +21,7 @@
         image: "/certificates/wscube-tech-fullstack-genai.jpg",
         description:
         "Participated in a full stack and Generative AI masterclass focused on building real-world products.",
-        verify: "",
+       verify: "",
     },
 
     {

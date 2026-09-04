@@ -45,7 +45,7 @@
             <div className="profile-wrapper">
 
             <img
-                src="/profile.jpg"
+                src="/akkprofile.jpg"
                 alt="Arun Kumar"
                 className="profile-image"
             />

@@ -54,6 +54,19 @@ const projects = [
     featured: false,
     icon: "🧠",
   },
+    {
+    id: 5,
+    title: "LeetCode Stats Dashboard",
+    category: "Full Stack • LeetCode • Analytics",
+    description:
+      "A full-stack dashboard for exploring LeetCode progress, problem-solving statistics, coding activity, streaks and performance insights.",
+    technologies: ["React", "Vite", "JavaScript", "Node.js", "Express.js", "LeetCode GraphQL API"],
+    status: "Completed",
+    github: "https://github.com/kumarun415/Leetcode-Stats-Dashboard",
+    live: "",
+    featured: false,
+    icon: "📊",
+  },
 ];
 
 export default projects;
