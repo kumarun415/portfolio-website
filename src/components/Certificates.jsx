@@ -48,16 +48,25 @@
                     {certificate.description}
                 </p>
 
-                {certificate.verify && (
-                    <a
+                {certificate.verify ? (
+                <a
                     href={certificate.verify}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="certificate-btn"
-                    >
-                    Verify Certificate →
-                    </a>
-                )}
+                >
+                Verify Certificate →
+                </a>
+            ) : certificate.view ? (
+                <a
+                    href={certificate.view}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="certificate-btn"
+                >
+                View Certificate →
+                </a>
+            ) : null}
 
                 </div>
 
