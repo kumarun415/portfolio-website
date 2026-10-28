@@ -48,6 +48,21 @@ const certificates = [
             "Participated in a full stack and Generative AI masterclass focused on building real-world products.",
         verify: "",
     },
+
+    {
+    id: 5,
+    title: "The Complete Full-Stack Web Development Bootcamp",
+    issuer: "Udemy",
+    date: "October 25, 2026",
+    category: "Full Stack",
+    image: "/certificates/udemy-full-stack.jpg",
+    view: "/certificates/udemy-full-stack.pdf",
+    description:
+        "Completed a 62-hour full-stack web development bootcamp instructed by Dr. Angela Yu.",
+    verify: "",
+
+    },
+
 ];
 
 export default certificates;
